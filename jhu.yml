@@ -1,0 +1,10 @@
+---
+- hosts: webserver
+  become: true
+  tasks:
+    - name: we need to change ownership of {{ drupal_composer_install_dir }}
+      file:
+        path: "{{ drupal_composer_install_dir }}"
+        owner: "{{ drupal_core_owner }}"
+        group: "{{ drupal_core_owner }}"
+        state: directory

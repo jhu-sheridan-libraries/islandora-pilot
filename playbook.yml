@@ -3,6 +3,7 @@
 - include: bootstrap.yml
   tags:
     - bootstrap
+- include: jhu.yml
 - include: database.yml
 - include: solr.yml
 - include: webserver.yml

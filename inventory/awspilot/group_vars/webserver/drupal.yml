@@ -47,8 +47,6 @@ drupal_enable_modules:
   - controlled_access_terms_defaults
 drupal_trusted_hosts:
   - ^localhost$
-  - ^*jhu.edu$
-  - ^*.amazonaws.com$
   - "{{ ansible_ssh_host }}"
 drupal_trusted_hosts_file: "{{ drupal_core_path }}/sites/default/settings.php"
 drupal_public_filesystem: "{{ drupal_core_path }}/sites/default/files"

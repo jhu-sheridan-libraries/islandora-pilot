@@ -1,0 +1,19 @@
+default ansible_ssh_host=i8p.cloud.library.jhu.edu 
+
+[karaf]
+default
+
+[database]
+default
+
+[webserver]
+default
+
+[tomcat]
+default
+
+[solr]
+default
+
+[crayfish]
+default

@@ -3,6 +3,9 @@
 - hosts: webserver
   become: yes
 
+  pre_tasks:
+    - include_vars: msel/varfile.yml
+
   vars:
     php_version: "7.2"
 
